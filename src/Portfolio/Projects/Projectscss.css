@@ -1,0 +1,36 @@
+.project{
+
+}
+.cards img{
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+    position: absolute;
+    object-fit: cover;
+}
+.projectImg{
+    overflow: hidden;
+}
+.cards img:hover{
+    width: 150%;
+    height: 120%;
+    opacity: 0.3;
+   
+
+}
+.cards img:hover + .projectDetails{
+    transition: 0.4s ease-in-out;
+    transform: translateY(0vw);
+
+    opacity: 1;
+}
+.projectDetails{
+    transition: 0.4s ease-in-out;
+    transform: translateY(2vw);
+  pointer-events: none;
+    opacity: 0;
+}
+.cursor{
+    transition: none;
+    transform: scale(1);
+    pointer-events: none;
+}

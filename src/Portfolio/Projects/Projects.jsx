@@ -7,6 +7,8 @@ import './Projectscss.css'
 import { projectList } from '../ProjectApi/project'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Projects() {
 let imageArray = [img1,img2,img3,img4]
 
@@ -48,18 +50,20 @@ const curDivRef = useRef([])
 {projectList.map((val,id)=>
 (
     <div key={id} className='cards overflow-hidden w-[40vw] bg-[black] lg:h-[80vh] h-[50vh] relative cursor-pointer'>
-   
-    <div  ref={(e)=>curPageRef.current[id]=e} className="cursor absolute z-[4] w-[10vw] h-[10vw] bg-[white] text-black rounded-[100%] absolute top-[-30%] left-[-30%] opacity-1" >
-      <p className='text-[1vw] absolute top-[65%] left-[20%] '> view project</p>
+   <a href={val.link} target='_blank'>
+    <div  ref={(e)=>curPageRef.current[id]=e} className="cursor absolute z-[4] w-[10vw] h-[10vw] bg-[white]  text-black rounded-[100%] absolute top-[-30%] left-[-30%] opacity-1"  style={{boxShadow:'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}}>
+      <p className='text-[0.6vw] absolute top-[65%] left-[20%] font-[600]'> view project</p>
+   <FontAwesomeIcon className='h-[1.5vw]  absolute left-[65%] top-[20%] rotate-[-50deg]' icon={faArrowRight} />
     </div>
-<a href={val.link} target='_blank'>
+
         <img ref={(e)=>curDivRef.current[id]=e}  onMouseMove={(e)=>{enterMouse(e,id)}} onMouseLeave={(e)=>{mouseLeave(e,id)}} src={imageArray[id]} alt="" className='w-[100%] h-[100%]'  />
-        </a>
+       
         <div className="projectDetails absolute w-[100%] h-[85%] flex flex-col justify-end px-[4vw]">
 <h3 className='text-[3vw] capitalize text-white'>{val.name}</h3>
 
 
         </div>
+        </a>
     </div>
 ))}
 </div>

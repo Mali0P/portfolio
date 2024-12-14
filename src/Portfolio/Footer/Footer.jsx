@@ -6,7 +6,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className='footer w-[100%] bg-[#f0f0f0] h-[35vh] mt-[7vw] flex flex-col justify-center items-center gap-[1vw]'>
+    <div className='footer w-[100%] bg-[#f0f0f0] h-[35vh] flex flex-col justify-center items-center gap-[1vw]'>
         <h3 className='text-[3vw] lg:text-[2vw] font-[600] text-[#659cf9]'>LET'S GET IN TOUCH</h3>
         <ul className='flex gap-[2vw] text-[2vw] relative items-center'>
         <li className='cursor-pointer'>

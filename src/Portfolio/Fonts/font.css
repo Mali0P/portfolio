@@ -1,11 +1,8 @@
 @font-face {
     font-family:open ;
-    src: url('./Open_Sans/static/OpenSans-Regular.ttf');
+    src: url('./Open_Sans/Poppins-Regular.ttf');
 }
-@font-face {
-    font-family:bold;
-    src: url('./Open_Sans/static/OpenSans-SemiBold.ttf');
-}
+
 *{
     padding: 0;
     margin: 0;
@@ -16,5 +13,6 @@
 }
 body{
     font-family: "open", sans-serif;
+  background-color: #121212;
 
 }

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 export default function HeroSection() {
   return (
-    <div className="heroSection relative text-white flex-col flex justify-center items-center w-[100vw] h-[110vh] ">
+    <div className="heroSection relative text-white flex-col flex justify-center items-center w-[100vw] h-[50vw] ">
 <div className="homeContent w-[70%] ">
   <h1 className='text-[4.2vw]'>
   Hi, I'm Pranesh! <img  src={profilePicture} style={{display:'inline-block'}} className='w-[5vw] h-[5vw] object-cover rounded-[100%] object-center' alt="" /> A beginner Web Developer exploring Frontend development, with a focus on <span className='text-[#7ddefe] font-[600]'>React</span> and <span className='text-[#14bfc9] font-[600]'>Tailwind CSS.</span>
@@ -27,7 +27,7 @@ export default function HeroSection() {
      <li className='flex justify-center itmes-center'><img src="https://www.svgrepo.com/show/374118/tailwind.svg" className='w-[6vw]' alt="" /></li>
      <li className='flex justify-center itmes-center'><img src="https://images.prismic.io/toyfight/65e1e07d27237c2bb829b9dc_GSAP-Meta-image.jpg?auto=format%2Ccompress&rect=0%2C0%2C2400%2C1260&w=2400&h=1260" className='w-[6vw] object-cover' alt="" /></li>
  </ul>
- <p className='text-center mt-[2vw]'> 
+ <p className='text-center mt-[2vw] text-[1vw]'> 
 Programming Languages & Tools</p>
 </div>
        

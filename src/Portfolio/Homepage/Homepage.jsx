@@ -3,7 +3,7 @@ import profilePicture from '../Assets/Project/profilepicture.jpg';
 import Projects from '../Projects/Projects';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
-import Skills from '../Skills/Skills';
+
 import HeroSection from '../HeroSection/HeroSection';
 
 
@@ -20,7 +20,7 @@ export default function Homepage() {
       <HeroSection/>
       
         <Projects/>
-        <Skills/>
+       
         <Footer/>
         </div>
   )
